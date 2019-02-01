@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>FRACTION CALCULATOR</title>
+</head>
+<body>
+
+<h1>FRACTION CALCULATOR</h1>
+
+    <form method="POST">
+        {% csrf_token %}
+<p> <h3>First fraction:&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Second fraction:</h3></p>   
+        {{ form.num1 }}
+        {{ form.num2 }}
+<p>
+ 
+        {{ form.denum1 }}
+       {{ form.denum2 }}
+
+</p>  
+ <p>
+    <input type="submit" value="add" name="add" >
+    <input type="submit" value="sub" name="sub" >
+    <input type="submit" value="mult" name="mult" >
+    <input type="submit" value="div" name="div" >
+</p>
+
+</form>
+
+
+
+
+
+</body>
+</html>
